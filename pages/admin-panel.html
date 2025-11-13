@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel | Meridian Developments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="md-page">
+  <header class="md-header">
+    <div class="md-container md-header__inner">
+      <a href="../index.html" class="md-logo">
+        <img src="../images/logo.png" alt="Meridian Developments" />
+      </a>
+      <div class="md-header__actions">
+        <span style="font-size:0.85rem; color:#a1a1a1;">Admin: <span data-user-email></span></span>
+        <a href="login.html" class="md-btn md-btn--ghost">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="md-page__main">
+    <div class="md-container md-dashboard">
+      <aside class="md-sidebar">
+        <p class="md-sidebar__title">Admin</p>
+        <ul class="md-sidebar__nav">
+          <li><a href="#" class="is-active">Overview</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#users">Users</a></li>
+          <li><a href="#enquiries">Enquiries</a></li>
+          <li><a href="#valuations">Valuation requests</a></li>
+          <li><a href="#viewings">Viewing schedule</a></li>
+          <li><a href="#payments">Payments</a></li>
+          <li><a href="#repairs">Repairs</a></li>
+          <li><a href="#content">Blog & testimonials</a></li>
+        </ul>
+      </aside>
+
+      <section class="md-dashboard__content">
+        <header>
+          <p class="md-tag">Admin dashboard</p>
+          <h1>Key metrics</h1>
+          <p style="color:#a1a1a1; max-width:520px;">
+            At‑a‑glance overview of performance across sales, lettings and management.
+          </p>
+        </header>
+
+        <!-- Analytics widgets -->
+        <div class="md-grid md-grid--4">
+          <article class="md-card md-stat">
+            <p class="md-stat__value">37</p>
+            <p class="md-stat__label">Live listings</p>
+          </article>
+          <article class="md-card md-stat">
+            <p class="md-stat__value">12</p>
+            <p class="md-stat__label">Sales agreed (last 30 days)</p>
+          </article>
+          <article class="md-card md-stat">
+            <p class="md-stat__value">21</p>
+            <p class="md-stat__label">Managed tenancies</p>
+          </article>
+          <article class="md-card md-stat">
+            <p class="md-stat__value">7</p>
+            <p class="md-stat__label">Open repair jobs</p>
+          </article>
+        </div>
+
+        <!-- Properties -->
+        <section id="properties" class="md-card">
+          <div style="display:flex; justify-content:space-between; gap:16px; align-items:center; margin-bottom:8px;">
+            <h2>Properties</h2>
+            <button class="md-btn md-btn--primary" type="button">Add property</button>
+          </div>
+          <table class="md-table">
+            <thead>
+              <tr>
+                <th>Reference</th>
+                <th>Address</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>MD-S-102</td>
+                <td>Riverside Penthouse, Manchester</td>
+                <td>Sale</td>
+                <td><span class="md-table__status md-table__status--success">Live</span></td>
+                <td>£850,000</td>
+              </tr>
+              <tr>
+                <td>MD-L-221</td>
+                <td>Warehouse Loft, Leeds Dock</td>
+                <td>Lettings</td>
+                <td><span class="md-table__status md-table__status--pending">Under offer</span></td>
+                <td>£2,200 pcm</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Users -->
+        <section id="users" class="md-card">
+          <h2>Users</h2>
+          <table class="md-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Created</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Admin User</td>
+                <td>info@meridian-developments.co.uk</td>
+                <td>Admin</td>
+                <td>01 Jan 2024</td>
+              </tr>
+              <tr>
+                <td>Demo Tenant</td>
+                <td>tenant@example.com</td>
+                <td>Tenant</td>
+                <td>05 May 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Valuation requests -->
+        <section id="valuations" class="md-card">
+          <h2>Valuation requests</h2>
+          <table class="md-table">
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Address</th>
+                <th>Purpose</th>
+                <th>Received</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sarah Thompson</td>
+                <td>Apartment, M3</td>
+                <td>Sale</td>
+                <td>12 Nov 2025</td>
+                <td><span class="md-table__status md-table__status--pending">To be booked</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Repairs -->
+        <section id="repairs" class="md-card">
+          <h2>Repairs</h2>
+          <table class="md-table">
+            <thead>
+              <tr>
+                <th>Ref</th>
+                <th>Property</th>
+                <th>Issue</th>
+                <th>Assigned to</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#MD-4821</td>
+                <td>Warehouse Loft, Leeds Dock</td>
+                <td>Boiler pressure low</td>
+                <td>ABC Heating</td>
+                <td><span class="md-table__status md-table__status--pending">Engineer booked</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Content -->
+        <section id="content" class="md-card">
+          <h2>Blog & testimonials</h2>
+          <p style="color:#a1a1a1; font-size:0.9rem;">
+            Manage homepage testimonials and blog content here.
+          </p>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="md-footer">
+    <div class="md-container md-footer__bottom">
+      <p>© 2025 Meridian Developments · Phoenix Online Development</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

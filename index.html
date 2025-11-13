@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meridian Developments | Luxury Real Estate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Meridian Developments - Luxury property sales, lettings and investments." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="md-header">
+    <div class="md-container md-header__inner">
+      <a href="index.html" class="md-logo">
+        <img src="images/logo.png" alt="Meridian Developments" />
+      </a>
+
+      <nav class="md-nav" aria-label="Main navigation">
+        <button class="md-nav__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="md-nav__list" id="navMenu">
+          <li><a href="#buy">Buy</a></li>
+          <li><a href="#sell">Sell</a></li>
+          <li><a href="#tenants">Tenants</a></li>
+          <li><a href="#landlords">Landlords</a></li>
+          <li><a href="#invest">Invest</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="md-header__actions">
+          <a href="pages/login.html" class="md-btn md-btn--ghost">Login</a>
+          <a href="pages/user-panel.html" class="md-btn md-btn--primary">myProperty</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Search -->
+  <main>
+    <section class="md-hero">
+      <div class="md-container md-hero__inner">
+        <div class="md-hero__content">
+          <p class="md-eyebrow">Meridian Developments</p>
+          <h1>Luxury property across the North West & Yorkshire.</h1>
+          <p class="md-hero__subtitle">
+            Bespoke sales, lettings and investment services for discerning buyers, landlords and developers.
+          </p>
+        </div>
+
+        <form class="md-search" id="propertySearch">
+          <div class="md-search__tabs" role="tablist">
+            <button type="button" class="md-search__tab md-search__tab--active" data-type="buy">Buy</button>
+            <button type="button" class="md-search__tab" data-type="rent">Rent</button>
+          </div>
+          <div class="md-search__grid">
+            <label class="md-field">
+              <span>Location</span>
+              <input type="text" name="location" placeholder="Town, city or postcode" />
+            </label>
+            <label class="md-field">
+              <span>Min price</span>
+              <select name="minPrice">
+                <option value="">No min</option>
+                <option value="100000">£100,000</option>
+                <option value="250000">£250,000</option>
+                <option value="500000">£500,000</option>
+              </select>
+            </label>
+            <label class="md-field">
+              <span>Max price</span>
+              <select name="maxPrice">
+                <option value="">No max</option>
+                <option value="250000">£250,000</option>
+                <option value="500000">£500,000</option>
+                <option value="1000000">£1,000,000</option>
+              </select>
+            </label>
+            <label class="md-field">
+              <span>Bedrooms</span>
+              <select name="bedrooms">
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+              </select>
+            </label>
+            <button class="md-btn md-btn--primary md-search__submit" type="submit">
+              Search properties
+            </button>
+          </div>
+          <p class="md-search__advanced">Advanced filters coming soon</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="md-section" id="buy">
+      <div class="md-container">
+        <div class="md-section__heading">
+          <h2>Featured properties</h2>
+          <p>Handpicked residences currently available through Meridian Developments.</p>
+        </div>
+        <div class="md-grid md-grid--3" id="featuredProperties">
+          <article class="md-card md-property" data-type="buy" data-bed="4" data-price="850000">
+            <div class="md-property__image">
+              <span class="md-badge md-badge--gold">Featured</span>
+            </div>
+            <div class="md-property__body">
+              <h3>Riverside Penthouse, Manchester</h3>
+              <p class="md-property__price">£850,000</p>
+              <p class="md-property__meta">4 bed · 3 bath · 2,150 sq ft</p>
+              <p class="md-property__location">Castlefield, M3</p>
+            </div>
+            <div class="md-property__footer">
+              <button class="md-btn md-btn--ghost md-btn--icon js-save-property">
+                <span>Save</span>
+              </button>
+              <button class="md-btn md-btn--primary">View details</button>
+            </div>
+          </article>
+
+          <article class="md-card md-property" data-type="rent" data-bed="2" data-price="2200">
+            <div class="md-property__image md-property__image--2">
+              <span class="md-badge">To Let</span>
+            </div>
+            <div class="md-property__body">
+              <h3>Warehouse Loft, Leeds Dock</h3>
+              <p class="md-property__price">£2,200 pcm</p>
+              <p class="md-property__meta">2 bed · 2 bath · 1,100 sq ft</p>
+              <p class="md-property__location">Leeds Dock, LS10</p>
+            </div>
+            <div class="md-property__footer">
+              <button class="md-btn md-btn--ghost md-btn--icon js-save-property">
+                <span>Save</span>
+              </button>
+              <button class="md-btn md-btn--primary">View details</button>
+            </div>
+          </article>
+
+          <article class="md-card md-property" data-type="buy" data-bed="5" data-price="1450000">
+            <div class="md-property__image md-property__image--3">
+              <span class="md-badge">New Instruction</span>
+            </div>
+            <div class="md-property__body">
+              <h3>Country House, Harrogate</h3>
+              <p class="md-property__price">£1,450,000</p>
+              <p class="md-property__meta">5 bed · 4 bath · 3,400 sq ft</p>
+              <p class="md-property__location">Harrogate, HG2</p>
+            </div>
+            <div class="md-property__footer">
+              <button class="md-btn md-btn--ghost md-btn--icon js-save-property">
+                <span>Save</span>
+              </button>
+              <button class="md-btn md-btn--primary">View details</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="md-section md-section--surface" id="services">
+      <div class="md-container">
+        <div class="md-section__heading">
+          <h2>How can we help?</h2>
+          <p>Specialist teams for buyers, sellers, tenants, landlords and investors.</p>
+        </div>
+        <div class="md-grid md-grid--4">
+          <article class="md-card md-service" id="sell">
+            <h3>Sell</h3>
+            <p>Premium marketing, professional photography and a dedicated sales progression team.</p>
+            <a href="pages/valuation.html" class="md-link">Free valuation</a>
+          </article>
+          <article class="md-card md-service" id="tenants">
+            <h3>Tenants</h3>
+            <p>Search luxury rentals, apply online, manage repairs and payments in the myProperty portal.</p>
+            <a href="pages/user-panel.html" class="md-link">Tenant hub</a>
+          </article>
+          <article class="md-card md-service" id="landlords">
+            <h3>Landlords</h3>
+            <p>Full management, rent collection and asset growth advice for single units and portfolios.</p>
+            <a href="pages/contact.html" class="md-link">Landlord services</a>
+          </article>
+          <article class="md-card md-service" id="invest">
+            <h3>Invest</h3>
+            <p>Off-plan opportunities, block acquisitions and bespoke investment strategies.</p>
+            <a href="pages/contact.html" class="md-link">Discuss opportunities</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="md-section">
+      <div class="md-container md-grid md-grid--4 md-stats">
+        <article class="md-card md-stat">
+          <p class="md-stat__value">£250m+</p>
+          <p class="md-stat__label">Property transacted</p>
+        </article>
+        <article class="md-card md-stat">
+          <p class="md-stat__value">98%</p>
+          <p class="md-stat__label">Of asking price achieved</p>
+        </article>
+        <article class="md-card md-stat">
+          <p class="md-stat__value">24/7</p>
+          <p class="md-stat__label">Online myProperty portal</p>
+        </article>
+        <article class="md-card md-stat">
+          <p class="md-stat__value">4.9</p>
+          <p class="md-stat__label">Average client rating</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="md-section md-section--surface">
+      <div class="md-container">
+        <div class="md-section__heading">
+          <h2>What our clients say</h2>
+        </div>
+        <div class="md-grid md-grid--3">
+          <article class="md-card md-testimonial">
+            <p class="md-testimonial__quote">
+              “From valuation to completion the service was flawless. The marketing completely exceeded our expectations.”
+            </p>
+            <p class="md-testimonial__name">Private seller, Cheshire</p>
+          </article>
+          <article class="md-card md-testimonial">
+            <p class="md-testimonial__quote">
+              “The myProperty portal makes managing our portfolio effortless. Repairs are logged and tracked in real time.”
+            </p>
+            <p class="md-testimonial__name">Portfolio landlord, Leeds</p>
+          </article>
+          <article class="md-card md-testimonial">
+            <p class="md-testimonial__quote">
+              “Meridian sourced and negotiated an entire block acquisition. Professional, discreet and commercially sharp.”
+            </p>
+            <p class="md-testimonial__name">Investment client</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="md-section" id="about">
+      <div class="md-container md-grid md-grid--2">
+        <div>
+          <h2>Award-winning, boutique and independent.</h2>
+          <p>
+            Meridian Developments combines deep local knowledge with a truly bespoke service. Our team of negotiators,
+            asset managers and lettings specialists handle every detail, whether you are selling a family home or
+            acquiring an entire development.
+          </p>
+        </div>
+        <div class="md-about__grid">
+          <div class="md-about__item">
+            <h3>Sales & lettings</h3>
+            <p>Prime residential property across Manchester, Leeds, Harrogate and surrounding areas.</p>
+          </div>
+          <div class="md-about__item">
+            <h3>Asset management</h3>
+            <p>End‑to‑end management for landlords and investors, supported by our online myProperty portal.</p>
+          </div>
+          <div class="md-about__item">
+            <h3>Development consultancy</h3>
+            <p>Advising on layouts, pricing and exit strategies for new build projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="md-section md-cta">
+      <div class="md-container md-cta__inner">
+        <div>
+          <h2>Thinking of selling or letting?</h2>
+          <p>Arrange a free, no‑obligation valuation with our senior team.</p>
+        </div>
+        <a class="md-btn md-btn--primary md-btn--lg" href="pages/valuation.html">Book a valuation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="md-footer">
+    <div class="md-container md-footer__top">
+      <div>
+        <img src="images/logo.png" alt="Meridian Developments" class="md-footer__logo" />
+        <p>Luxury sales, lettings & investments across the North West & Yorkshire.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:info@meridian-developments.co.uk">info@meridian-developments.co.uk</a></p>
+        <p>Phone: 01274020738</p>
+        <p>Mobile: 07824449686</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="md-footer__links">
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="pages/admin-panel.html">Admin panel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="md-container md-footer__bottom">
+      <p>© 2025 Meridian Developments · Phoenix Online Development</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

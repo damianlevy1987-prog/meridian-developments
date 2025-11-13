@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Meridian Developments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="md-page">
+  <header class="md-header">
+    <div class="md-container md-header__inner">
+      <a href="../index.html" class="md-logo">
+        <img src="../images/logo.png" alt="Meridian Developments" />
+      </a>
+    </div>
+  </header>
+
+  <main class="md-page__main">
+    <div class="md-container md-grid md-grid--2">
+      <section class="md-form-card">
+        <p class="md-eyebrow">Contact</p>
+        <h1>Start the conversation.</h1>
+        <p class="md-hero__subtitle">
+          Whether you’re buying, selling, letting or investing, we’d love to hear from you.
+        </p>
+
+        <div class="md-card" style="margin-top:24px;">
+          <form id="contactForm" novalidate>
+            <div class="md-grid md-grid--2">
+              <label class="md-field">
+                <span>Name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label class="md-field">
+                <span>Email</span>
+                <input type="email" name="email" required />
+              </label>
+            </div>
+
+            <div class="md-grid md-grid--2" style="margin-top:16px;">
+              <label class="md-field">
+                <span>Phone</span>
+                <input type="tel" name="phone" />
+              </label>
+              <label class="md-field">
+                <span>Subject</span>
+                <select name="subject">
+                  <option value="buying">Buying</option>
+                  <option value="selling">Selling</option>
+                  <option value="letting">Letting</option>
+                  <option value="investing">Investing</option>
+                  <option value="general">General enquiry</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="md-field" style="margin-top:16px;">
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit" class="md-btn md-btn--primary md-btn--lg" style="margin-top:24px;">
+              Send message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <aside>
+        <section class="md-card">
+          <h2>Our office</h2>
+          <p>Meridian Developments</p>
+          <p>North West & Yorkshire</p>
+          <p style="color:#a1a1a1; font-size:0.9rem;">
+            Exact office locations and map to be confirmed.
+          </p>
+
+          <h3>Opening hours</h3>
+          <p>Monday – Friday: 9:00 – 18:00<br />Saturday: 10:00 – 16:00<br />Sunday & bank holidays: By appointment</p>
+
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:info@meridian-developments.co.uk" class="md-link">info@meridian-developments.co.uk</a></p>
+          <p>Phone: 01274020738</p>
+          <p>Mobile: 07824449686</p>
+        </section>
+
+        <section class="md-card" style="margin-top:24px;">
+          <h2>Map</h2>
+          <div style="height:220px; border-radius:16px; background:#1c1c1c; border:1px dashed rgba(255,255,255,0.16); display:flex; align-items:center; justify-content:center; color:#a1a1a1; font-size:0.9rem;">
+            Map placeholder – integrate Google Maps or similar.
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="md-footer">
+    <div class="md-container md-footer__bottom">
+      <p>© 2025 Meridian Developments · Phoenix Online Development</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

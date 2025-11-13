@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Free Valuation | Meridian Developments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="md-page">
+  <header class="md-header">
+    <div class="md-container md-header__inner">
+      <a href="../index.html" class="md-logo">
+        <img src="../images/logo.png" alt="Meridian Developments" />
+      </a>
+    </div>
+  </header>
+
+  <main class="md-page__main">
+    <div class="md-container md-grid md-grid--2">
+      <section class="md-form-card">
+        <p class="md-eyebrow">Free valuation</p>
+        <h1>Discover what your property is worth.</h1>
+        <p class="md-hero__subtitle">
+          No‑obligation valuation with a senior member of the Meridian Developments team.
+        </p>
+
+        <div class="md-card" style="margin-top:24px;">
+          <form id="valuationForm" novalidate>
+            <h2>About you</h2>
+            <div class="md-grid md-grid--2">
+              <label class="md-field">
+                <span>Full name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label class="md-field">
+                <span>Email</span>
+                <input type="email" name="email" required />
+              </label>
+            </div>
+            <div class="md-grid md-grid--2" style="margin-top:16px;">
+              <label class="md-field">
+                <span>Phone</span>
+                <input type="tel" name="phone" />
+              </label>
+              <label class="md-field">
+                <span>Preferred contact method</span>
+                <select name="contactMethod">
+                  <option value="">No preference</option>
+                  <option value="phone">Phone</option>
+                  <option value="email">Email</option>
+                </select>
+              </label>
+            </div>
+
+            <h2 style="margin-top:32px;">Property details</h2>
+            <label class="md-field">
+              <span>Property address</span>
+              <input type="text" name="address" required />
+            </label>
+            <div class="md-grid md-grid--3" style="margin-top:16px;">
+              <label class="md-field">
+                <span>Property type</span>
+                <select name="type">
+                  <option value="house">House</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="bungalow">Bungalow</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label class="md-field">
+                <span>Bedrooms</span>
+                <select name="bedrooms">
+                  <option value="">Select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5+</option>
+                </select>
+              </label>
+              <label class="md-field">
+                <span>Bathrooms</span>
+                <select name="bathrooms">
+                  <option value="">Select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3+</option>
+                </select>
+              </label>
+            </div>
+
+            <h2 style="margin-top:32px;">Valuation purpose</h2>
+            <label class="md-field">
+              <span>Purpose</span>
+              <select name="purpose">
+                <option value="sale">Selling</option>
+                <option value="letting">Letting</option>
+                <option value="remortgage">Re-mortgage</option>
+                <option value="probate">Probate</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+
+            <label class="md-field" style="margin-top:16px;">
+              <span>Additional information</span>
+              <textarea name="notes" rows="4" placeholder="Tell us anything else that may be relevant..."></textarea>
+            </label>
+
+            <button type="submit" class="md-btn md-btn--primary md-btn--lg" style="margin-top:24px;">
+              Request valuation
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <aside>
+        <section class="md-card">
+          <h2>Why choose Meridian?</h2>
+          <ul style="padding-left:20px; color:#a1a1a1; font-size:0.95rem;">
+            <li>Specialists in prime property and new developments.</li>
+            <li>Accurate valuations based on real‑time market data.</li>
+            <li>Discreet marketing options for high‑profile clients.</li>
+            <li>Dedicated sales & lettings progression teams.</li>
+          </ul>
+        </section>
+        <section class="md-card" style="margin-top:24px;">
+          <h2>Contact us</h2>
+          <p>Email: <a href="mailto:info@meridian-developments.co.uk" class="md-link">info@meridian-developments.co.uk</a></p>
+          <p>Phone: 01274020738</p>
+          <p>Mobile: 07824449686</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="md-footer">
+    <div class="md-container md-footer__bottom">
+      <p>© 2025 Meridian Developments · Phoenix Online Development</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
